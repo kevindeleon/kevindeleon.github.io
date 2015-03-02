@@ -1,0 +1,16 @@
+# Site settings
+name: Kevin deLeon
+email: kevin.deleon@gmail.com
+title: "Kevin deLeon | Web Design and Development | New Orleans, LA"
+description: > # The website and blog of Kevin deLeon -- front-end and back-end developer, currently residing in the swamp.
+baseurl: ""
+url: "http://kevin-deleon.com"
+permalink: /:title
+paginate: 10
+paginate_path: /blog/page/:num
+twitter_username: kevindeleon
+github_username:  kevindeleon
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
