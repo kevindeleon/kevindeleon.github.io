@@ -30,106 +30,106 @@ I am always a fan of finding helpful information out on the interwebs, so I am p
 
 Log in as root or su:
 
-```
+{% highlight bash %}
 $ su
 (enter root password)
-```
+{% endhighlight %}
 
 For CentOS only, add the EPEL repository (which contains Bugzilla):
 
-```
+{% highlight bash %}
 $ rpm -Uvh http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-3.noarch.rpm
-```
+{% endhighlight %}
 
 Install Bugzilla:
 
-```
+{% highlight bash %}
 $ yum install bugzilla
-```
+{% endhighlight %}
 
 Install MySQL:
 
-```
+{% highlight bash %}
 $ yum install mysql-server
-```
+{% endhighlight %}
 
 Install Apache:
 
-```
+{% highlight bash %}
 $ yum install httpd
-```
+{% endhighlight %}
 
 Start the the MySQL service:
 
-```
+{% highlight bash %}
 $ /etc/init.d/mysqld start
-```
+{% endhighlight %}
 
 Set password for the root user in MySQL:
 
-```
+{% highlight bash %}
 $ mysqladmin -u root password {password}
-```
+{% endhighlight %}
 
 Log into MySQL:
 
-```
+{% highlight bash %}
 $ mysql -u root -p
-```
+{% endhighlight %}
 
 Create 'bugs' user in MySQL:
 
-```
+{% highlight bash %}
 mysql> CREATE USER 'bugs'@'localhost' IDENTIFIED BY '{password}';
-```
+{% endhighlight %}
 
 Create 'bugs' database in MySQL:
 
-```
+{% highlight bash %}
 mysql> CREATE DATABASE bugs;
-```
+{% endhighlight %}
 
 Grant privileges to 'bugs' user:
 
-```
+{% highlight bash %}
 mysql> GRANT ALL ON bugs.* TO 'bugs'@'localhost';
-```
+{% endhighlight %}
 
 Run checksetup.pl to check modules and to create a new copy of localconfig:
 
-```
+{% highlight bash %}
 $ /usr/share/bugzilla/./checksetup.pl
-```
+{% endhighlight %}
 
 Edit your copy of localconfg - change $db_pass to the password you entered for the MySQL user 'bugs' earlier:
 
-```
+{% highlight bash %}
 $ gedit /etc/bugzilla/localconfig
 
 $db_pass = '{password}';
-```
+{% endhighlight %}
 
 Run checksetup.pl again to finish setting up Bugzilla:
 
-```
+{% highlight bash %}
 $ /usr/share/bugzilla/./checksetup.pl
-```
+{% endhighlight %}
 
 When prompted to do so specify the Bugzilla administrator's email address, name, and password.
 
 Start apache:
 
-```
+{% highlight bash %}
 $ /etc/init.d/httpd start
-```
+{% endhighlight %}
 
 Go to http://localhost/bugzilla/ in a browser and behold.
 
 If, upon a reboot, mysqld and/or httpd are not running, you can add them to the list of services that run at startup:
 
-```
+{% highlight bash %}
 $ ntsysv (Or $ /usr/sbin/ntsysv on CentOS)
-```
+{% endhighlight %}
 
 Arrow up or down to find mysqld and/or httpd.  Hit the space key to select/deselect the service.  When done, hit Tab to get to the Ok or Cancel buttons.
 

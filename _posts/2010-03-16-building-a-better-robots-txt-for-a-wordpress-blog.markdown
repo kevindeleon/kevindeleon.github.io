@@ -25,7 +25,7 @@ So I have been designing websites for quite a while now.  I realize the importan
 
 My first stop of course was the [WordPress Codex](http://codex.wordpress.org/Search_Engine_Optimization_for_WordPress). Suffice it to say, I wasn't disappointed. They have a VERY good example of a `robots.txt` file written specifically for a base WordPress install.
 
-```
+{% highlight robotframework %}
 User-agent: *
 Disallow: /cgi-bin
 Disallow: /wp-admin
@@ -59,7 +59,7 @@ User-agent: duggmirror
 Disallow: /
 
 Sitemap: http://www.example.com/sitemap.xml
-```
+{% endhighlight %}
 
 Most of this is quite useful just the way it is.  It solves almost all duplicate content problems (comments, categories, query strings (?)), and keeps the robots out of unnecessary/private directories such as the 'wp-' group of folders (wp-content, wp-admin, etc...).  It allows a few important bots into all directories, such as the Google Image bot, and the Google AdSense bot (if you are displaying AdWords ads).
 
@@ -67,7 +67,7 @@ An interesting, and I feel, important item is that they are blocking 'duggmirror
 
 So, for the most part, I have decided to keep this `robots.txt` file in-tact. However, I did make a few changes, and my `robots.txt` file is below in its entirety, along with an explanation of the changes I made.
 
-```
+{% highlight robotframework %}
 User-agent: *
 Disallow: /cgi-bin
 Disallow: /wp-*
@@ -93,7 +93,7 @@ User-agent: duggmirror
 Disallow: /
 
 Sitemap: http://kdeleon3.site/sitemap.xml.gz
-```
+{% endhighlight %}
 
 For starters I got rid of most of the 'wp-' directives and shortened them to the one `'Disallow: wp-*'` directive using the `robots.txt` wildcard character.  The wildcard character allows you to match one or more characters in a URL.  Historically there was a bit of controversy over using wildcards in `robots.txt` files because early on they lacked support.  However, most (and all of the engines that I really care about) now support the use of wildcards.  You do need to be safe when using wildcards though, because if you don't, you may [cause yourself some unwanted headaches](http://www.seobook.com/archives/002361.shtml).
 
