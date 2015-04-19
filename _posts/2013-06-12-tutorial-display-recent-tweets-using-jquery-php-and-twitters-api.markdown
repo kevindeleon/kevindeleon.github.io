@@ -45,7 +45,7 @@ Alright, let&rsquo;s get to the meat of this. Again, this is the way I solved th
 
 Create a file to contain your PHP class. I called mine `get-tweets.php`. You can call it whatever you want, but just remember you are going to have to include it in whatever file you are going to be loading your statuses onto.
 
-```
+{% highlight php5 %}
 class GetTweets {
 	static public function get_most_recent($screen_name, $count, $retweets)
 	{
@@ -80,20 +80,20 @@ class GetTweets {
 	}
 
 }
-```
+{% endhighlight %}
 
 Our method `get_most_recent()` accepts 3 string parameters.  The first is the username of your twitter account.  The second parameter is the number of tweets to return, and the last parameter is whether or not to include retweets (true or false).
 
 Now we need to require our php file in our page that will be displaying our tweets.  You can do this simply with the following line.  I put this near the top of my footer include (which is where my tweets are displayed), but you can put it wherever you want.
 
-```
+{% highlight php5 %}
 // Requiring custom class that pulls most recent tweets
 require_once('get-tweets.php')
-```
+{% endhighlight %}
 
 Now let&rsquo;s get to our JavaScript/jQuery.  I added the following code inside a file I call `site.js` and include that file in the head of my page that is going to display my tweets. Quite a bit of logic in `display_tweets()` (and all of `relative_time()`) comes from Twitter&rsquo;s `<a href="http://twitter.com/javascripts/blogger.js" target="_blank">blogger.js</a>` script that many of us were using.  I made some changes using jQuery and also changed the wrappers from 'li' to 'p' because it works better for my particular situation.  They were also using `display_tweets()` as a callback in their query string which I don&rsquo;t believe is supported anymore. Their 'twitters.length' check was broken, as that is not a valid property of the new object it seems. I could be wrong there, but it wasn&rsquo;t working for me. To correct the broken loop, I changed the way we iterate using jQuery's `.each()`.
 
-```
+{% highlight php5 %}
 //display_tweets accepts a JSON object
 function display_tweets(tweets) {
     var statusHTML = "";
@@ -141,13 +141,13 @@ function relative_time(time_value) {
     return (parseInt(delta / 86400)).toString() + ' days ago';
   }
 }
-```
+{% endhighlight %}
 
 The function `display_tweets()` accepts a JSON object that contains &ldquo;tweet&rdquo; objects. It will then append our tweets (wrapped in 'p' tags) into an element with the id 'twitter_update_list' (which is a div in my case). I also use a span, with the class `tweet-loader`, inside my main container div to give the user some feedback in case things are loading slowly.  You could use an animated gif or something if you like, but simple text works fine for me as it is usually gone before anyone notices anyway.  Our JS above removes this span before appending our tweets(s)
 
 Place this code in your page that will be displaying your tweets.
 
-```
+{% highlight html5 %}
 <!-- Our div that will contain our tweets -->
 
 <div id="twitter_update_list"><span class="tweet-loader">Loading tweets...</span></div>
@@ -159,6 +159,6 @@ Place this code in your page that will be displaying your tweets.
 	//pass returned JSON object into display_tweets()
 	display_tweets(tweets);
 </script>
-```
+{% endhighlight %}
 
 That&rsquo;s really it!  I know I kind of blew through a lot here, but I really just wanted to get this out there to help those that may have been in the same situation I was in.  If you have any questions, please ask them in the comments and I will try to answer them as quickly as possible.
