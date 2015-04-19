@@ -1,3 +1,12 @@
-<header class="site-header">
-
+<header>
+	<div class="row">
+		<h1 class="grid_4">kevin deLeon</h1>
+		<nav class="grid_8">
+			<ul class="navigation">
+				<li><a class="{% if page.url == '/index.html' %}current{% endif %}" href="/">about</a></li>
+				<li><a class="{% if page.url contains '/resume' %}current{% endif %}" href="/resume">resume</a></li>
+				<li><a class="{% if page.url contains '/blog' %}current{% endif %}" href="/blog">blog</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>

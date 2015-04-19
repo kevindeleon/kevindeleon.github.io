@@ -7,10 +7,10 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kdeleon3.site
+  url: http://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kdeleon3.site
+author_url: http://kevin-deleon.com
 excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;virtualhostx2.jpg\"
   alt=\"VirtualHostX - Mac Virtual Hosting Made Easy\" &#47;>\r\n\r\nNow I am not
   a software reviewer by any stretch of the imagination, but I still feel the need
@@ -20,7 +20,7 @@ excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads
   developed by <a href=\"http:&#47;&#47;clickontyler.com&#47;\" target=\"_blank\">Tyler
   Hall<&#47;a>. "
 wordpress_id: 103
-wordpress_url: http://www.kdeleon3.site/?p=103
+wordpress_url: http://kevin-deleon.com/?p=103
 date: '2010-03-22 15:16:31 -0500'
 date_gmt: '2010-03-22 19:16:31 -0500'
 categories:

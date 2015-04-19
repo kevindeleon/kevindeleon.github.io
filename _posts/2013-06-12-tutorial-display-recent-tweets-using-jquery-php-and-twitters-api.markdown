@@ -7,10 +7,10 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kdeleon3.site
+  url: http://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kdeleon3.site
+author_url: http://kevin-deleon.com
 excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads&#47;2013&#47;06&#47;twitterhead.jpg\"
   alt=\"Twitter App\" title=\"Twitter App\" width=\"620\" height=\"239\" class=\"alignnone
   size-full\">\r\n\r\n<p><em>UPDATE 6.24.13<&#47;em>: You can now download&#47;fork
@@ -28,7 +28,7 @@ excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads
   resolved this problem. It's probably not the best way to do it, but if it helps
   you out, great!<&#47;p>"
 wordpress_id: 127
-wordpress_url: http://kdeleon3.site/?p=127
+wordpress_url: http://kevin-deleon.com/?p=127
 date: '2013-06-12 23:40:21 -0500'
 date_gmt: '2013-06-13 04:40:21 -0500'
 categories:

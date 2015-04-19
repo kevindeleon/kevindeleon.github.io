@@ -7,10 +7,10 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kdeleon3.site
+  url: http://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kdeleon3.site
+author_url: http://kevin-deleon.com
 excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads&#47;2010&#47;07&#47;bugzilla-fly1.jpg\"
   alt=\"Installing Bugzilla\" &#47;>\r\n\r\nSo a buddy of mine, <a href=\"http:&#47;&#47;www.linkedin.com&#47;pub&#47;charles-glisan&#47;\">Charlie
   Glisan<&#47;a>, was having issues installing Bugzilla on Fedora 11 and CentOS 5
@@ -20,7 +20,7 @@ excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads
   out there that are trying to accomplish the same goal to have the instructions available,
   so he asked if I would like to post the instructions on my blog. "
 wordpress_id: 111
-wordpress_url: http://www.kdeleon3.site/?p=111
+wordpress_url: http://kevin-deleon.com/?p=111
 date: '2010-07-25 14:31:09 -0500'
 date_gmt: '2010-07-25 18:31:09 -0500'
 categories:

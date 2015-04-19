@@ -8,10 +8,10 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kdeleon3.site
+  url: http://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kdeleon3.site
+author_url: http://kevin-deleon.com
 excerpt: "<img title=\"Flash ActionScript 3.0 Java Runtime Environment Error\" src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads&#47;2010&#47;12&#47;as3error.jpg\"
   alt=\"Flash ActionScript 3.0 Java Runtime Environment Error\" width=\"620\" height=\"239\"
   &#47;>\r\n\r\nThis is just a really quick post to hopefully help anyone out that
@@ -22,7 +22,7 @@ excerpt: "<img title=\"Flash ActionScript 3.0 Java Runtime Environment Error\" s
   whenever I would try to run any AS3 code.  The error didn't occur when I was running
   ActionScript 2.0 projects. "
 wordpress_id: 117
-wordpress_url: http://www.kdeleon3.site/?p=117
+wordpress_url: http://kevin-deleon.com/?p=117
 date: '2010-12-18 23:18:41 -0600'
 date_gmt: '2010-12-19 04:18:41 -0600'
 categories:

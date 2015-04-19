@@ -7,10 +7,10 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kdeleon3.site
+  url: http://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kdeleon3.site
+author_url: http://kevin-deleon.com
 excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads&#47;2012&#47;04&#47;bricks.jpg\"
   alt=\"Bricks - Yeah they&#039;re a metaphor!\" title=\"Bricks - Yeah they&#039;re
   a metaphor!\" width=\"620\" height=\"239\" class=\"alignnone size-full wp-image-125\"
@@ -26,7 +26,7 @@ excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads
   of a community that I constantly take for granted.  Why am I doing that?  I&rsquo;m
   actively trying to involve myself in the open source community for a couple of reasons.<&#47;p>"
 wordpress_id: 123
-wordpress_url: http://www.kdeleon3.site/?p=123
+wordpress_url: http://kevin-deleon.com/?p=123
 date: '2012-04-05 17:19:04 -0500'
 date_gmt: '2012-04-05 22:19:04 -0500'
 categories:

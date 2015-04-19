@@ -7,10 +7,10 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kdeleon3.site
+  url: http://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kdeleon3.site
+author_url: http://kevin-deleon.com
 excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;robot.jpg\"
   alt=\"robot\" &#47;>\r\n\r\nSo I have been designing websites for quite a while
   now.  I realize the importance of a <code>robots.txt<&#47;code> file, and the implications
@@ -25,7 +25,7 @@ excerpt: "<img src=\"http:&#47;&#47;www.kdeleon3.site&#47;wp-content&#47;uploads
   started re-searching best practices for writing <code>robots.txt<&#47;code> files
   for WordPress installations. "
 wordpress_id: 100
-wordpress_url: http://www.kdeleon3.site/?p=100
+wordpress_url: http://kevin-deleon.com/?p=100
 date: '2010-03-16 14:14:45 -0500'
 date_gmt: '2010-03-16 18:14:45 -0500'
 categories:
