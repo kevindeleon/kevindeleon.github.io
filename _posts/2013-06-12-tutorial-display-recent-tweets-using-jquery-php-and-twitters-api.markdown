@@ -39,7 +39,7 @@ First things first, you are going to have to <a href="https://dev.twitter.com/ap
 
 After you have your app setup, click into your apps details and click on the OAuth tool tab.  You are going to need your consumer key, consumer secret, access token and access token secret.
 
-<img src="http://www.kdeleon3.site/wp-content/uploads/2013/06/oauth.jpg" alt="Twitter OAuth Tool" title="Twitter OAuth Tool" width="620" class="alignnone size-full">
+<img src="/wp-content/uploads/2013/06/oauth.jpg" alt="Twitter OAuth Tool" class="img-max">
 
 Alright, let&rsquo;s get to the meat of this. Again, this is the way I solved this problem.  I am sure there are better options.  If you have a better way, please feel free to post it in the comments.
 
