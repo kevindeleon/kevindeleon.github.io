@@ -45,7 +45,7 @@ Alright, let&rsquo;s get to the meat of this. Again, this is the way I solved th
 
 Create a file to contain your PHP class. I called mine `get-tweets.php`. You can call it whatever you want, but just remember you are going to have to include it in whatever file you are going to be loading your statuses onto.
 
-{% highlight php5 %}
+{% highlight php %}
 class GetTweets {
 	static public function get_most_recent($screen_name, $count, $retweets)
 	{
@@ -86,14 +86,14 @@ Our method `get_most_recent()` accepts 3 string parameters.  The first is the us
 
 Now we need to require our php file in our page that will be displaying our tweets.  You can do this simply with the following line.  I put this near the top of my footer include (which is where my tweets are displayed), but you can put it wherever you want.
 
-{% highlight php5 %}
+{% highlight php %}
 // Requiring custom class that pulls most recent tweets
 require_once('get-tweets.php')
 {% endhighlight %}
 
 Now let&rsquo;s get to our JavaScript/jQuery.  I added the following code inside a file I call `site.js` and include that file in the head of my page that is going to display my tweets. Quite a bit of logic in `display_tweets()` (and all of `relative_time()`) comes from Twitter&rsquo;s `<a href="http://twitter.com/javascripts/blogger.js" target="_blank">blogger.js</a>` script that many of us were using.  I made some changes using jQuery and also changed the wrappers from 'li' to 'p' because it works better for my particular situation.  They were also using `display_tweets()` as a callback in their query string which I don&rsquo;t believe is supported anymore. Their 'twitters.length' check was broken, as that is not a valid property of the new object it seems. I could be wrong there, but it wasn&rsquo;t working for me. To correct the broken loop, I changed the way we iterate using jQuery's `.each()`.
 
-{% highlight php5 %}
+{% highlight javascript %}
 //display_tweets accepts a JSON object
 function display_tweets(tweets) {
     var statusHTML = "";
@@ -147,7 +147,7 @@ The function `display_tweets()` accepts a JSON object that contains &ldquo;tweet
 
 Place this code in your page that will be displaying your tweets.
 
-{% highlight html5 %}
+{% highlight html %}
 <!-- Our div that will contain our tweets -->
 
 <div id="twitter_update_list"><span class="tweet-loader">Loading tweets...</span></div>
