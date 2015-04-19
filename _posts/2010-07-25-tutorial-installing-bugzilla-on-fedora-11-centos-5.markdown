@@ -36,102 +36,58 @@ $ su
 ```
 
 For CentOS only, add the EPEL repository (which contains Bugzilla):
-
-```
-$ rpm -Uvh http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-3.noarch.rpm
-```
+`$ rpm -Uvh http://download.fedora.redhat.com/pub/epel/5/i386/epel-release-5-3.noarch.rpm`
 
 Install Bugzilla:
-
-```
-$ yum install bugzilla
-```
+`$ yum install bugzilla`
 
 Install MySQL:
-
-```
-$ yum install mysql-server
-```
+`$ yum install mysql-server`
 
 Install Apache:
-
-```
-$ yum install httpd
-```
+`$ yum install httpd`
 
 Start the the MySQL service:
-
-```
-$ /etc/init.d/mysqld start
-```
+`$ /etc/init.d/mysqld start`
 
 Set password for the root user in MySQL:
-
-```
-$ mysqladmin -u root password {password}
-```
+`$ mysqladmin -u root password {password}`
 
 Log into MySQL:
-
-```
-$ mysql -u root -p
-```
+`$ mysql -u root -p`
 
 Create 'bugs' user in MySQL:
-
-```
-mysql> CREATE USER 'bugs'@'localhost' IDENTIFIED BY '{password}';
-```
+`mysql> CREATE USER 'bugs'@'localhost' IDENTIFIED BY '{password}';`
 
 Create 'bugs' database in MySQL:
-
-```
-mysql> CREATE DATABASE bugs;
-```
+`mysql> CREATE DATABASE bugs;`
 
 Grant privileges to 'bugs' user:
-
-```
-mysql> GRANT ALL ON bugs.* TO 'bugs'@'localhost';
-```
+`mysql> GRANT ALL ON bugs.* TO 'bugs'@'localhost';`
 
 Run checksetup.pl to check modules and to create a new copy of localconfig:
-
-```
-$ /usr/share/bugzilla/./checksetup.pl
-```
+`$ /usr/share/bugzilla/./checksetup.pl`
 
 Edit your copy of localconfg - change $db_pass to the password you entered for the MySQL user 'bugs' earlier:
 
 ```
 $ gedit /etc/bugzilla/localconfig
-```
 
-```
 $db_pass = '{password}';
 ```
 
 Run checksetup.pl again to finish setting up Bugzilla:
-
-```
-$ /usr/share/bugzilla/./checksetup.pl
-```
+`$ /usr/share/bugzilla/./checksetup.pl`
 
 When prompted to do so specify the Bugzilla administrator's email address, name, and password.
 
 Start apache:
-
-```
-$ /etc/init.d/httpd start
-```
+`$ /etc/init.d/httpd start`
 
 Go to http://localhost/bugzilla/ in a browser and behold.
 
 If, upon a reboot, mysqld and/or httpd are not running, you can add them to the list of services that run at startup:
 
-```
-$ ntsysv (Or $ /usr/sbin/ntsysv on CentOS)
-```
+`$ ntsysv (Or $ /usr/sbin/ntsysv on CentOS)`
 
 Arrow up or down to find mysqld and/or httpd.  Hit the space key to select/deselect the service.  When done, hit Tab to get to the Ok or Cancel buttons.
-
