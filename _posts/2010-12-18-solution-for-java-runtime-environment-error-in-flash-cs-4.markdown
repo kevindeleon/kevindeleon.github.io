@@ -32,7 +32,7 @@ After doing some searching on Google, and finding mostly solutions that were reg
 
 So I opened 'Java Preferences.app' which is installed in my '/Applications/Utilities/' folder and found what I had suspected.  My JRE was set to 'Java SE 6.'
 
-<img title="Java Preferences Utility" src="/wp-content/uploads/2010/12/javaprefs1.jpg" alt="Java Preferences Utility" />
+<img class="img-max" src="/wp-content/uploads/2010/12/javaprefs1.jpg" alt="Java Preferences Utility" />
 
 Apparently, Flash for some reason needs to run a 32-bit instance of JRE 5 on my machine when running ActionScript 3 code.  This may be due to the fact I am running an older Intel Macbook Pro, or maybe Flash CS4 just needs an older version of Java.  I honestly have no idea.  But, after changing the Java Preferences to 'J2SE 5.0 32-bit,' Flash CS4 now runs without a hitch, and has no problem executing ActionScript 3.  I do have to switch the preferences back to 6 when I run NetBeans, but that is fairly trivial using the Java Preferences panel.
 
