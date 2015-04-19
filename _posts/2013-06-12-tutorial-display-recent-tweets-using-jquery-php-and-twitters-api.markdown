@@ -45,7 +45,7 @@ Alright, let&rsquo;s get to the meat of this. Again, this is the way I solved th
 
 Create a file to contain your PHP class. I called mine `get-tweets.php`. You can call it whatever you want, but just remember you are going to have to include it in whatever file you are going to be loading your statuses onto.
 
-{% highlight php5 %}
+{% highlight php %}
 class GetTweets {
 	static public function get_most_recent($screen_name, $count, $retweets)
 	{
@@ -86,7 +86,7 @@ Our method `get_most_recent()` accepts 3 string parameters.  The first is the us
 
 Now we need to require our php file in our page that will be displaying our tweets.  You can do this simply with the following line.  I put this near the top of my footer include (which is where my tweets are displayed), but you can put it wherever you want.
 
-{% highlight php5 %}
+{% highlight php %}
 // Requiring custom class that pulls most recent tweets
 require_once('get-tweets.php')
 {% endhighlight %}
