@@ -23,6 +23,7 @@ categories:
 - jquery
 - php
 tags: []
+comments: true
 ---
 *UPDATE 6.24.13*: You can now download/fork the <a href="https://github.com/kevindeleon/get-tweets" target="_blank">source code</a> for my PHP and JS files used in this tutorial on github. You will still need to get your own copies of <a href="https://github.com/mynetx/codebird-php" target="_blank">codebird</a> and <a href="http://jquery.com" target="_blank">jQuery</a> from their respective sources. 
 

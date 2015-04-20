@@ -21,6 +21,7 @@ categories:
 - wordpress
 - open source
 tags: []
+comments: true
 ---
 Recently I received the title &ldquo;Contributor&rdquo; on a <a href="https://github.com/" target="_blank">github</a> <a href="https://github.com/veloper/WordPress-Domain-Changer" target="_blank">repo</a> that I&hellip;well&hellip;contribute to. This probably doesn&rsquo;t mean a lot to most of you reading this, but I feel like it is kind of a big deal for me, and it got me thinking a bit. As web developers that constantly use open source products, how often do most of us give back to that community? If you are anything like me, constantly busy and figuring out how the hell you are going to finish &ldquo;this&rdquo; project, then probably not that often. However, over the last year, I have made it a goal of mine to strive to be a bigger part of a community that I constantly take for granted. Why am I doing that? I&rsquo;m actively trying to involve myself in the open source community for a couple of reasons.
 

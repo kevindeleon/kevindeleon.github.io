@@ -20,7 +20,7 @@ categories:
 - development
 - software
 - reviews
-tags: []
+comments: true
 ---
 Now I am not a software reviewer by any stretch of the imagination, but I still feel the need every now and then, when I run across something I feel is useful, to sing it&rsquo;s praises, or at least describe why I feel it is useful. I am definitely singing the praises of <a href="http://clickontyler.com/virtualhostx/" target="_blank">VirtualHostX</a>, developed by <a href="http://clickontyler.com/" target="_blank">Tyler Hall</a>.
 

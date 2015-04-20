@@ -22,6 +22,7 @@ categories:
 - Flash
 - ActionScript
 tags: []
+comments: true
 ---
 This is just a really quick post to hopefully help anyone out that may be running into the same annoying problem I was with Flash CS4 and ActionScript 3 on Apple OS X (specifically 10.5).
 

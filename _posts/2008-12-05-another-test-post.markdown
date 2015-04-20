@@ -19,7 +19,7 @@ categories:
 - design
 - development
 tags: []
-comments: []
+comments: true
 ---
 I have been working for a company based in Wilmington, NC, All-Spec Industries, and my goal for last 3 months has been to completely re-design the e-commerce website.
 

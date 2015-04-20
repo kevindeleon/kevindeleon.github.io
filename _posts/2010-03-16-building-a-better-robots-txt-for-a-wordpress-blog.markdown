@@ -19,7 +19,7 @@ categories:
 - development
 - SEO
 - wordpress
-tags: []
+comments: true
 ---
 So I have been designing websites for quite a while now. I realize the importance of a `robots.txt` file, and the implications it holds for search engine optimization (SEO) and preventing duplicate content. However, for some reason, I have never bothered looking into building a better `robots.txt` file for my personal blog/WordPress powered portfolio. Weird, right? Honestly, what made me realize I needed to do something better was Google&rsquo;s Webmaster tools, which I started using since re-launching my website this month. After looking through a few weeks of data in my account, I quickly realized that I would be running into duplicate content issues at the very least. So, I started re-searching best practices for writing `robots.txt` files for WordPress installations.
 

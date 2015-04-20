@@ -18,7 +18,7 @@ date_gmt: '2008-02-08 16:32:32 -0600'
 categories:
 - web
 tags: []
-comments: []
+comments: true
 ---
 Well. I joined [Twitter](http://twitter.com/kevindeleon), and so far I like it. It&rsquo;s actually quite an interesting concept really.
 

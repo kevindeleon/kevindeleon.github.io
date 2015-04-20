@@ -21,6 +21,7 @@ categories:
 - software
 - tutorial
 tags: []
+comments: true
 ---
 So a buddy of mine, <a href="http://www.linkedin.com/pub/charles-glisan/">Charlie Glisan</a>, was having issues installing Bugzilla on Fedora 11 and CentOS 5 a while back. After hours of strife, and finally getting the software up and running, he decided he would write detailed instructions on how to accomplish the install. He doesn&rsquo;t have a blog himself and thought that it might be helpful to others out there that are trying to accomplish the same goal to have the instructions available, so he asked if I would like to post the instructions on my blog.
 
