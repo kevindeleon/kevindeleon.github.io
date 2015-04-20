@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Tutorial: Installing Bugzilla on Fedora 11 & CentOS 5 | Kevin deLeon | Web Design and Development | New Orleans, LA'
+title: 'Tutorial: Installing Bugzilla on Fedora 11 & CentOS 5'
 author:
   display_name: Kevin deLeon
   login: admin

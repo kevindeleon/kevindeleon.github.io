@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: I'm an Open Source Contributor! | Kevin deLeon | Web Design and Development | New Orleans, LA
+title: I'm an Open Source Contributor!
 author:
   display_name: Kevin deLeon
   login: admin

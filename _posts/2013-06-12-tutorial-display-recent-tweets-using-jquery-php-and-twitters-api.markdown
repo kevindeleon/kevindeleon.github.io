@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Tutorial: Display Recent Tweets Using jQuery, PHP and Twitter''s API | Kevin deLeon | Web Design and Development | New Orleans, LA'
+title: 'Tutorial: Display Recent Tweets Using jQuery, PHP and Twitter''s API'
 author:
   display_name: Kevin deLeon
   login: admin

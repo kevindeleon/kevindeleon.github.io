@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Tutorial: Solution for Java Runtime Environment Error in Flash CS 4 and ActionScript 3 | Kevin deLeon | Web Design and Development | New Orleans, LA
+title: Tutorial: Solution for Java Runtime Environment Error in Flash CS 4 and ActionScript 3
 author:
   display_name: Kevin deLeon
   login: admin
