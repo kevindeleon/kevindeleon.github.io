@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 'Review: VirtualHostX 2.0'
+title: 'Review: VirtualHostX 2.0 | Kevin deLeon | Web Design and Development | New Orleans, LA'
 author:
   display_name: Kevin deLeon
   login: admin

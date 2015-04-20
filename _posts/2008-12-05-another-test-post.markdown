@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: All-Spec Industries Re-design
+title: All-Spec Industries Re-design | Kevin deLeon | Web Design and Development | New Orleans, LA
 author:
   display_name: Kevin deLeon
   login: admin

@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Building A Better robots.txt For A WordPress Blog
+title: Building A Better robots.txt For A WordPress Blog | Kevin deLeon | Web Design and Development | New Orleans, LA
 author:
   display_name: Kevin deLeon
   login: admin

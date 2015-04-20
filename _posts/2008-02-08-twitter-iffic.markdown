@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Twitter-iffic?
+title: Twitter-iffic? | Kevin deLeon | Web Design and Development | New Orleans, LA
 author:
   display_name: Kevin deLeon
   login: admin
