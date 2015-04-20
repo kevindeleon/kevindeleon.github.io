@@ -26,7 +26,7 @@ tags: []
 ---
 *UPDATE 6.24.13*: You can now download/fork the <a href="https://github.com/kevindeleon/get-tweets" target="_blank">source code</a> for my PHP and JS files used in this tutorial on github. You will still need to get your own copies of <a href="https://github.com/mynetx/codebird-php" target="_blank">codebird</a> and <a href="http://jquery.com" target="_blank">jQuery</a> from their respective sources. 
 
-Up until recently I had been using Twitter&rsquo;s v1 API and their <a href="http://twitter.com/javascripts/blogger.js" target="_blank">blogger.js</a> script to display my most recent tweet in the footer of my website. It was simple, worked great and was really all I wanted. As of yesterday, Twitter finally retired the v1 API in favor of their v1.1 API which requires OAuth authentication. This promptly left me with the "oh crap, my site is broken" problem. I decided to write a quick blog post on how I resolved this problem. It's probably not the best way to do it, but if it helps you out, great!
+Up until recently I had been using Twitter&rsquo;s v1 API and their <a href="http://twitter.com/javascripts/blogger.js" target="_blank">blogger.js</a> script to display my most recent tweet in the footer of my website. It was simple, worked great and was really all I wanted. As of yesterday, Twitter finally retired the v1 API in favor of their v1.1 API which requires OAuth authentication. This promptly left me with the "oh crap, my site is broken" problem. I decided to write a quick blog post on how I resolved this problem. It&rsquo;s probably not the best way to do it, but if it helps you out, great!
 
 Things we&rsquo;ll need:
 
@@ -94,7 +94,7 @@ require_once('get-tweets.php')
 ?>
 {% endhighlight %}
 
-Now let&rsquo;s get to our JavaScript/jQuery. I added the following code inside a file I call `site.js` and include that file in the head of my page that is going to display my tweets. Quite a bit of logic in `display_tweets()` (and all of `relative_time()`) comes from Twitter&rsquo;s <a href="http://twitter.com/javascripts/blogger.js" target="_blank">blogger.js</a> script that many of us were using. I made some changes using jQuery and also changed the wrappers from 'li' to 'p' because it works better for my particular situation. They were also using `display_tweets()` as a callback in their query string which I don&rsquo;t believe is supported anymore. Their 'twitters.length' check was broken, as that is not a valid property of the new object it seems. I could be wrong there, but it wasn&rsquo;t working for me. To correct the broken loop, I changed the way we iterate using jQuery's `.each()`.
+Now let&rsquo;s get to our JavaScript/jQuery. I added the following code inside a file I call `site.js` and include that file in the head of my page that is going to display my tweets. Quite a bit of logic in `display_tweets()` (and all of `relative_time()`) comes from Twitter&rsquo;s <a href="http://twitter.com/javascripts/blogger.js" target="_blank">blogger.js</a> script that many of us were using. I made some changes using jQuery and also changed the wrappers from &lsquo;li&rsquo; to &lsquo;p&rsquo; because it works better for my particular situation. They were also using `display_tweets()` as a callback in their query string which I don&rsquo;t believe is supported anymore. Their &lsquo;twitters.length&rsquo; check was broken, as that is not a valid property of the new object it seems. I could be wrong there, but it wasn&rsquo;t working for me. To correct the broken loop, I changed the way we iterate using jQuery&rsquo;s `.each()`.
 
 {% highlight javascript %}
 // Receives JSON object returned by get_most_recent from get-tweets.php
@@ -146,7 +146,7 @@ function relative_time(time_value) {
 }
 {% endhighlight %}
 
-The function `display_tweets()` accepts a JSON object that contains &ldquo;tweet&rdquo; objects. It will then append our tweets (wrapped in 'p' tags) into an element with the id 'twitter_update_list' (which is a div in my case). I also use a span, with the class `tweet-loader`, inside my main container div to give the user some feedback in case things are loading slowly. You could use an animated gif or something if you like, but simple text works fine for me as it is usually gone before anyone notices anyway. Our JS above removes this span before appending our tweets(s)
+The function `display_tweets()` accepts a JSON object that contains &ldquo;tweet&rdquo; objects. It will then append our tweets (wrapped in &lsquo;p&rsquo; tags) into an element with the id &lsquo;twitter_update_list&rsquo; (which is a div in my case). I also use a span, with the class `tweet-loader`, inside my main container div to give the user some feedback in case things are loading slowly. You could use an animated gif or something if you like, but simple text works fine for me as it is usually gone before anyone notices anyway. Our JS above removes this span before appending our tweets(s)
 
 Place this code in your page that will be displaying your tweets.
 

@@ -11,7 +11,6 @@ author:
 author_login: admin
 author_email: kevin.deleon@gmail.com
 author_url: http://kevin-deleon.com
-excerpt: "Well. I joined Twitter, and so far I like it. It&rsquo;s actually quite an interesting concept really. At first, Twitter seemed like another lame 2.0 app that to me really had no reason to exist. I mean who in their right mind wants everyone to know whatthey are doing at any given second, and on top of that, you actually have to be narcissistic enough to think anyone actually cares. Well, I was right, but I was also very wrong."
 wordpress_id: 99
 wordpress_url: http://kevin-deleon.com/?p=99
 date: '2008-02-08 11:32:32 -0600'

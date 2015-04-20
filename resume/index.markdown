@@ -21,7 +21,7 @@ categories:
 tags: []
 comments: []
 ---
-# Why Me? Because I've been doing this stuff for years...
+# Why Me? Because I&rsquo;ve been doing this stuff for years...
 
 ## KEY SKILLS
 * Over 8 years of experience designing and engineering large websites, including complete redesign and restructure of higher-ed websites, intranets, e-commerce and mobile websites
@@ -38,7 +38,7 @@ comments: []
 * Experience providing employee training and end-user support<br />
 
 ## CLIENTS (past + present)
-CenturyLink, Zatarain's, Whitney/Hancock Bank, Piccadilly Restaurants, Sanderson Farms, Louisiana Economic Development, GNO, Inc., French Market Coffee, Sazerac Company, City of Austin, TX, Loyola University, Bricolage Academy, All-Spec Industries
+CenturyLink, Zatarain&rsquo;s, Whitney/Hancock Bank, Piccadilly Restaurants, Sanderson Farms, Louisiana Economic Development, GNO, Inc., French Market Coffee, Sazerac Company, City of Austin, TX, Loyola University, Bricolage Academy, All-Spec Industries
 
 ## EXPERIENCE
 

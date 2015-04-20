@@ -22,7 +22,7 @@ categories:
 - tutorial
 tags: []
 ---
-So a buddy of mine, <a href="http://www.linkedin.com/pub/charles-glisan/">Charlie Glisan</a>, was having issues installing Bugzilla on Fedora 11 and CentOS 5 a while back. After hours of strife, and finally getting the software up and running, he decided he would write detailed instructions on how to accomplish the install. He doesn't have a blog himself and thought that it might be helpful to others out there that are trying to accomplish the same goal to have the instructions available, so he asked if I would like to post the instructions on my blog.
+So a buddy of mine, <a href="http://www.linkedin.com/pub/charles-glisan/">Charlie Glisan</a>, was having issues installing Bugzilla on Fedora 11 and CentOS 5 a while back. After hours of strife, and finally getting the software up and running, he decided he would write detailed instructions on how to accomplish the install. He doesn&rsquo;t have a blog himself and thought that it might be helpful to others out there that are trying to accomplish the same goal to have the instructions available, so he asked if I would like to post the instructions on my blog.
 
 I am always a fan of finding helpful information out on the interwebs, so I am posting his instructions, verbatim, in hopes that they are helpful to a few struggling souls. If you have any questions, or find errors, please post them in the comments below and we will try to get to them as quickly as possible.
 
@@ -69,17 +69,17 @@ Log into MySQL:
 $ mysql -u root -p
 {% endhighlight %}
 
-Create 'bugs' user in MySQL:  
+Create &lsquo;bugs&rsquo; user in MySQL:  
 {% highlight bash %}
 mysql> CREATE USER 'bugs'@'localhost' IDENTIFIED BY '{password}';
 {% endhighlight %}
 
-Create 'bugs' database in MySQL:  
+Create &lsquo;bugs&rsquo; database in MySQL:  
 {% highlight bash %}
 mysql> CREATE DATABASE bugs;
 {% endhighlight %}
 
-Grant privileges to 'bugs' user:  
+Grant privileges to &lsquo;bugs&rsquo; user:  
 {% highlight bash %}
 mysql> GRANT ALL ON bugs.* TO 'bugs'@'localhost';
 {% endhighlight %}
@@ -89,7 +89,7 @@ Run checksetup.pl to check modules and to create a new copy of localconfig:
 $ /usr/share/bugzilla/./checksetup.pl
 {% endhighlight %}
 
-Edit your copy of localconfg - change $db_pass to the password you entered for the MySQL user 'bugs' earlier:  
+Edit your copy of localconfg - change $db_pass to the password you entered for the MySQL user &lsquo;bugs&rsquo; earlier:  
 {% highlight bash %}
 $ gedit /etc/bugzilla/localconfig
 
@@ -101,7 +101,7 @@ Run checksetup.pl again to finish setting up Bugzilla:
 $ /usr/share/bugzilla/./checksetup.pl
 {% endhighlight %}
 
-When prompted to do so specify the Bugzilla administrator's email address, name, and password.
+When prompted to do so specify the Bugzilla administrator&rsquo;s email address, name, and password.
 
 Start apache:  
 {% highlight bash %}
