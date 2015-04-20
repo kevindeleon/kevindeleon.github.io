@@ -22,7 +22,7 @@ categories:
 - tutorial
 tags: []
 ---
-So a buddy of mine, <a href="http://www.linkedin.com/pub/charles-glisan/">Charlie Glisan</a>, was having issues installing Bugzilla on Fedora 11 and CentOS 5 a while back. After hours of strife, and finally getting the software up and running,  he decided he would write detailed instructions on how to accomplish the install. He doesn't have a blog himself and thought that it might be helpful to others out there that are trying to accomplish the same goal to have the instructions available, so he asked if I would like to post the instructions on my blog.
+So a buddy of mine, <a href="http://www.linkedin.com/pub/charles-glisan/">Charlie Glisan</a>, was having issues installing Bugzilla on Fedora 11 and CentOS 5 a while back. After hours of strife, and finally getting the software up and running, he decided he would write detailed instructions on how to accomplish the install. He doesn't have a blog himself and thought that it might be helpful to others out there that are trying to accomplish the same goal to have the instructions available, so he asked if I would like to post the instructions on my blog.
 
 I am always a fan of finding helpful information out on the interwebs, so I am posting his instructions, verbatim, in hopes that they are helpful to a few struggling souls. If you have any questions, or find errors, please post them in the comments below and we will try to get to them as quickly as possible.
 
@@ -131,5 +131,5 @@ If, upon a reboot, mysqld and/or httpd are not running, you can add them to the 
 $ ntsysv (Or $ /usr/sbin/ntsysv on CentOS)
 {% endhighlight %}
 
-Arrow up or down to find mysqld and/or httpd.  Hit the space key to select/deselect the service.  When done, hit Tab to get to the Ok or Cancel buttons.
+Arrow up or down to find mysqld and/or httpd. Hit the space key to select/deselect the service. When done, hit Tab to get to the Ok or Cancel buttons.
 
