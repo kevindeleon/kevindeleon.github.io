@@ -47,38 +47,37 @@ Create a file to contain your PHP class. I called mine `get-tweets.php`. You can
 
 {% highlight php %}
 class GetTweets {
-	static public function get_most_recent($screen_name, $count, $retweets)
-	{
-		//codebird is going to be doing the oauth lifting for us
-		require_once('codebird.php');
+  static public function get_most_recent($screen_name, $count, $retweets)
+  {
+    //codebird is going to be doing the oauth lifting for us
+    require_once('codebird.php');
 
-		//These are your keys/tokens/secrets provided by Twitter
-		$CONSUMER_KEY = 'yourconsumerkey';
-		$CONSUMER_SECRET = 'yourconsumersecret';
-		$ACCESS_TOKEN = 'accesstoken';
-		$ACCESS_TOKEN_SECRET = 'accesstokensecret';
+    //These are your keys/tokens/secrets provided by Twitter
+    $CONSUMER_KEY = 'yourconsumerkey';
+    $CONSUMER_SECRET = 'yourconsumersecret';
+    $ACCESS_TOKEN = 'accesstoken';
+    $ACCESS_TOKEN_SECRET = 'accesstokensecret';
 
-		//Get authenticated
-		\Codebird\Codebird::setConsumerKey($CONSUMER_KEY, $CONSUMER_SECRET);
+    //Get authenticated
+    \Codebird\Codebird::setConsumerKey($CONSUMER_KEY, $CONSUMER_SECRET);
 
-		$cb = \Codebird\Codebird::getInstance();
-		$cb->setToken($ACCESS_TOKEN, $ACCESS_TOKEN_SECRET);
+    $cb = \Codebird\Codebird::getInstance();
+    $cb->setToken($ACCESS_TOKEN, $ACCESS_TOKEN_SECRET);
 
-		//These are our params passed in for our request to twitter
-		//The GET request is made by our codebird instance for us further down
-		$params = array(
-			'screen_name' => $screen_name,
-			'count' => $count,
-			'include_rts' => $retweets,
-		);
+    //These are our params passed in for our request to twitter
+    //The GET request is made by our codebird instance for us further down
+    $params = array(
+      'screen_name' => $screen_name,
+      'count' => $count,
+      'include_rts' => $retweets,
+    );
 
-		//tweets returned by Twitter in JSON object format
-	    $tweets = (array) $cb->statuses_userTimeline($params);
+    //tweets returned by Twitter in JSON object format
+    $tweets = (array) $cb->statuses_userTimeline($params);
 
-		//Let's encode it for our JS/jQuery and return it
-		return json_encode($tweets);
-	}
-
+    //Let's encode it for our JS/jQuery and return it
+    return json_encode($tweets);
+  }
 }
 {% endhighlight %}
 
@@ -96,23 +95,21 @@ Now let&rsquo;s get to our JavaScript/jQuery. I added the following code inside 
 {% highlight javascript %}
 //display_tweets accepts a JSON object
 function display_tweets(tweets) {
-    var statusHTML = "";
-	jQuery.each(tweets, function(i, tweet) {
-	    //let's check to make sure we actually have a tweet
-		if (tweet.text !== undefined) {
-			var username = tweet.user.screen_name;
-			//clean things up a bit
-            var status = tweet.text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
-                return '<a href="'+url+'">'+url+'</a>';
-            }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
-                return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
-            });
-            statusHTML = '
-<span>'+status+'</span> <a style="font-size:85%" href="http://twitter.com/'+username+'/statuses/'+tweet.id_str+'">'+relative_time(tweet.created_at)+'</a>
-';
-            jQuery('.tweet-loader').remove();
-            jQuery('#twitter_update_list').append(statusHTML);
-		}
+  var statusHTML = "";
+  jQuery.each(tweets, function(i, tweet) {
+  //let's check to make sure we actually have a tweet
+  if (tweet.text !== undefined) {
+    var username = tweet.user.screen_name;
+    //clean things up a bit
+    var status = tweet.text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+      return '<a href="'+url+'">'+url+'</a>';
+    }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+      return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+    });
+    statusHTML = '<span>'+status+'</span> <a style="font-size:85%" href="http://twitter.com/'+username+'/statuses/'+tweet.id_str+'">'+relative_time(tweet.created_at)+'</a>';
+    jQuery('.tweet-loader').remove();
+    jQuery('#twitter_update_list').append(statusHTML);
+  }
 	});
 }
 
@@ -152,9 +149,9 @@ Place this code in your page that will be displaying your tweets.
 <div id="twitter_update_list"><span class="tweet-loader">Loading tweets...</span></div>
 <script type="text/javascript">
   //get JSON object from twitter
-	var tweets = <?php echo GetTweets::get_most_recent('kevindeleon','1','true') ?>;
-	//pass returned JSON object into display_tweets()
-	display_tweets(tweets);
+  var tweets = <?php echo GetTweets::get_most_recent('kevindeleon','1','true') ?>;
+  //pass returned JSON object into display_tweets()
+  display_tweets(tweets);
 </script>
 {% endhighlight %}
 
