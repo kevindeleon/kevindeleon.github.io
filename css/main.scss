@@ -7,8 +7,7 @@
 @import
 		"vars",
 		"grid",
-		"base",
-		"syntax-highlighting"
+		"base"
 ;
 
 body {
@@ -122,6 +121,12 @@ nav ul li a.current {
 .blog-list li span {
 	font-family: $header-font;
 	font-size: 20px;
+}
+
+code {
+	background-color: #eee;
+	font-family: Consolas, Courier New, monospace;
+	font-size: $code-font-size;
 }
 
 /***********************************************
