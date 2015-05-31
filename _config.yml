@@ -27,3 +27,5 @@ sitemap:
 # Build settings
 markdown: redcarpet
 highlighter: pygments
+gems:
+  - jekyll-sitemap
