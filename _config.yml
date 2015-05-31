@@ -11,6 +11,19 @@ paginate_path: /blog/page/:num
 twitter_username: kevindeleon
 github_username:  kevindeleon
 
+# Sitemap settings
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+       # - "/index.html"
+        - "/blog/index.markdown"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+
 # Build settings
 markdown: redcarpet
 highlighter: pygments
