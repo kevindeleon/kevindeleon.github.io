@@ -45,7 +45,7 @@ This part of the process is pretty straight forward, but a bit more cumbersome t
 <code data-gist-id="fdfa54325db7f73d03b4"></code>
 
 ## Swift
-This file is obviously where the majority of the differences are between my implementation and Jay&rsquo;s implementation, and for a pretty obvious reason: his is in Objective-C and mine is in Swift. Again, I&rsquo;m not going to hit on all the syntax differences, but if you compare the two implementations, they&rsquo;re pretty easy to pick spot. If you have questions, or see ways that I can make this better, please let me know in the comments. Again, this is one of my first few forays into Swift, so I won&rsquo;t be offended!
+This file is obviously where the majority of the differences are between my implementation and Jay&rsquo;s implementation, and for a pretty obvious reason: his is in Objective-C and mine is in Swift. Again, I&rsquo;m not going to hit on all the syntax differences, but if you compare the two implementations, they&rsquo;re pretty easy to spot. If you have questions, or see ways that I can make this better, please let me know in the comments. Again, this is one of my first few forays into Swift, so I won&rsquo;t be offended!
 
 <!-- MCFileWriterUtil.swift -->
 <code data-gist-id="95417e5c6e0ed2819b32"></code>
