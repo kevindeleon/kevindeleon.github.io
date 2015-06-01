@@ -8,6 +8,13 @@ layout: default
 			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 				Posted: {{ page.date | date: "%b %-d, %Y" }}
 			</time>
+			<br>
+			<span class='st_twitter' displayText='Tweet'></span>
+			<span class='st_reddit' displayText='Reddit'></span>
+			<span class='st_linkedin' displayText='LinkedIn'></span>
+			<span class='st_facebook' displayText='Facebook'></span>
+			<span class='st_googleplus' displayText='Google +'></span>
+			<span class='st_email' displayText='Email'></span>
 		</p>
 		<div class="post-content" itemprop="articleBody">
 			{{ content }}
