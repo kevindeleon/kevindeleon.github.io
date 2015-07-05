@@ -25,17 +25,17 @@ comments: []
 
 ## KEY SKILLS
 * Over 8 years of experience designing and engineering large websites, including complete redesign and restructure of higher-ed websites, intranets, e-commerce and mobile websites
-* Extensive programming experience hand coding PHP, MySQL, JavaScript, HTML and CSS
-* Experience leveraging frameworks and libraries including Codeigniter and jQuery
+* Extensive programming experience hand coding PHP, MySQL, Swift, JavaScript, HTML and CSS
+* Experience leveraging frameworks and libraries including Codeigniter, React, Angular and jQuery
 * Custom programming, theming and administration of content management systems including Drupal, WordPress, Kentico, Sitecore, Umbraco and Serena Collage
 * Social media application development with Facebook, YouTube and Twitter APIs
 * Website tracking (analytics) integration and deployment with Google Analytics, Omniture and DoubleClick suites
 * Thorough understanding of cross-browser and platform compatibility issues
 * Experience building websites that meet ADA Section 508(c) compliance
 * Graphic design skills including web/print design - proficiency in Adobe Photoshop and Illustrator
-* Extensive experience administering servers in business environments, including web-servers running Linux, Apache, Microsoft Windows Server 2003 and IIS6
+* Extensive experience administering servers in business environments, including web-servers running Linux, Apache, and Nginx
 * Strong interpersonal skills, including experience working in fast paced, team-oriented environments
-* Experience providing employee training and end-user support<br />
+* Experience providing employee training and end-user support
 
 ## CLIENTS (past + present)
 CenturyLink, Zatarain&rsquo;s, Whitney/Hancock Bank, Piccadilly Restaurants, Sanderson Farms, Louisiana Economic Development, GNO, Inc., French Market Coffee, Sazerac Company, City of Austin, TX, Loyola University, Bricolage Academy, All-Spec Industries
@@ -44,13 +44,13 @@ CenturyLink, Zatarain&rsquo;s, Whitney/Hancock Bank, Piccadilly Restaurants, San
 
 ### GigSalad
 Engineer, Remote - { May 2014 - Present }  
-Review, analyze, develop and modify custom applications; including coding, testing, debugging and documenting applications and systems. Back-end development using PHP5 and CodeIgniter framework. Front-end (UX) development using JavaScript, jQuery, AngularJS, HTML5 and CSS3.
+Review, analyze, develop and modify custom applications; including coding, testing, debugging and documenting applications and systems. Back-end development using PHP5 and CodeIgniter framework. Front-end (UX) development using JavaScript, jQuery, React, AngularJS, HTML5 and CSS3. Mobile (iOS) development with Swift and Objective-C.
+### kevin-deleon.com
+Freelance Designer/Developer - { June 1999 - Present }  
+Provide services to clients ranging from custom web/mobile(iOS) programming and site maintenance to graphic/web design and photography. Services provided: site layout and design, information architecture strategy, responsive design/development, custom WordPress and Drupal theme development, site updates, server and client side programming utilizing languages and frameworks including PHP, Swift, JavaScript, jQuery, CodeIgniter, React and AngularJS.
 ### Loyola University
 Web Programmer, New Orleans, LA - { May 2012 - May 2014 }  
 Review, analyze, develop and modify Drupal and custom systems; including encoding, testing, debugging and documenting applications and systems. Develop custom Drupal modules and PHP applications. Linux web server administration.
-### kdeleon3.site
-Freelance Designer/Developer - { June 1999 - Present }  
-Provide services to clients ranging from graphic/web design to custom programming and site maintenance. Summary of services provided: site layout and design, information architecture strategy, responsive design/development, custom WordPress and Drupal theming, site updates, server/client side programming and digital photography.
 ### Peter A Mayer Advertising
 Interactive Developer, New Orleans, LA - { February 2011 - May 2012 }  
 Develop and manage web sites (desktop and mobile) and HTML email campaigns for some of the nations most well known brands. Integrate clients&rsquo; web sites with their social media presence through available APIs and custom applications. See projects from conception, through completion and management while staying within budget and meeting predetermined deadlines.
