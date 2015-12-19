@@ -25,8 +25,8 @@ comments: []
 
 ## KEY SKILLS
 * Over 8 years of experience designing and engineering large websites, including complete redesign and restructure of higher-ed websites, intranets, e-commerce and mobile websites
-* Extensive programming experience hand coding PHP, MySQL, Swift, JavaScript, HTML and CSS
-* Experience leveraging frameworks and libraries including CodeIgniter, React, Angular and jQuery
+* Extensive programming experience hand coding PHP, MySQL, Swift, JavaScript, C#, HTML and CSS
+* Experience leveraging frameworks and libraries including CodeIgniter, React, Angular, jQuery and ASP.NET (MVC)
 * Custom programming, theming and administration of content management systems including Drupal, WordPress, Kentico, Sitecore, Umbraco and Serena Collage
 * Social media application development with Facebook, YouTube and Twitter APIs
 * Website tracking (analytics) integration and deployment with Google Analytics, Omniture and DoubleClick suites
