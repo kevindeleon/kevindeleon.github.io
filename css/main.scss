@@ -17,6 +17,14 @@
 	background: $default-link-color;
 }
 
+a::selection {
+	color: white;
+}
+
+a::-moz-selection {
+	color: white;
+}
+
 body {
 	font-family: $base-font-family;
 	font-weight: $font-weight-normal;
