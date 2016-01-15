@@ -10,6 +10,13 @@
 		"base"
 ;
 
+::selection {
+	background: $default-link-color;
+}
+::-moz-selection {
+	background: $default-link-color;
+}
+
 body {
 	font-family: $base-font-family;
 	font-weight: $font-weight-normal;
@@ -36,10 +43,10 @@ a:hover {
 	color: #666;
 }
 
-p { 
-	margin: 0 0 20px 0; 
-	padding: 0; 
-	font-size: $default-font-size; 
+p {
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: $default-font-size;
 	line-height: 30px;
 }
 
