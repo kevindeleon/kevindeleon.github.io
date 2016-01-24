@@ -18,6 +18,8 @@ categories:
 tags: []
 comments: true
 ---
+<em>Update 01/24/16: I thought this may be useful enough, that I decided to submit it to the core `language-go` package with <a href="https://github.com/atom/language-go/pull/83" target="_blank">this pull request</a>. It was merged, so this should be available by default in future releases.</em>
+
 This is going be a super quick post, but I thought I&rsquo;d throw it out there for any Atom newcomers who might need a snippet for creating a quick little starter template for their Go packages/scripts.
 
 First things first, make sure the core `language-go` package is enabled. It should be by default.
