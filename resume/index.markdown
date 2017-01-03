@@ -85,7 +85,7 @@ Assisted Webmaster in daily upkeep of college websites on Linux/Apache servers, 
 ## EDUCATION
 
 ### Louisiana Tech University, Ruston LA
-Bachelor of Science: Computer Information Systems | Minor: Psychology - { November 2002 }
+Bachelor of Science: Computer Information Systems | Minor: Psychology - { November 2002 }  
 Relevant Coursework: Business Application Development, System Analysis, Design, and Implementation, System Presentation and Sales, Marketing, Management, Business Administration, Accounting, Web Design, Graphic Design Software
 
 ## CERTIFICATIONS
