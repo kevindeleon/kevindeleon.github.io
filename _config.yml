@@ -25,7 +25,7 @@ sitemap:
     priority_name: "priority"
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 gems:
   - jekyll-sitemap
