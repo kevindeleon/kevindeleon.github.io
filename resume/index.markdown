@@ -24,7 +24,7 @@ comments: []
 # Why Me? Because I&rsquo;ve been doing this stuff for years...
 
 ## KEY SKILLS
-* Over 8 years of experience designing and engineering large websites, including complete redesign and restructure of higher-ed websites, intranets, e-commerce and mobile websites
+* Over 10 years of experience designing and engineering large websites, including complete redesign and restructure of higher-ed websites, intranets, e-commerce and mobile websites
 * Extensive programming experience hand coding PHP, MySQL, Swift, JavaScript, C#, HTML and CSS
 * Experience leveraging frameworks and libraries including CodeIgniter, React, Angular, jQuery and ASP.NET (MVC)
 * Custom programming, theming and administration of content management systems including Drupal, WordPress, Kentico, Sitecore, Umbraco and Serena Collage
@@ -42,8 +42,11 @@ CenturyLink, Zatarain&rsquo;s, Whitney/Hancock Bank, Piccadilly Restaurants, San
 
 ## EXPERIENCE
 
+### Intermedia
+Web Developer, Remote - { February 2016 - Present }
+Review, analyze, develop and modify public facing assets; including coding, testing, debugging and documenting applications and systems. Back-end development using PHP5, CodeIgniter framework, Fuel CMS and Wordpress. Front-end (UX) development using JavaScript, jQuery, React, HTML5 and CSS3. Integration of assets with Salesforce API.
 ### GigSalad
-Engineer, Remote - { May 2014 - Present }  
+Engineer, Remote - { May 2014 - February 2016 }  
 Review, analyze, develop and modify custom applications; including coding, testing, debugging and documenting applications and systems. Back-end development using PHP5 and CodeIgniter framework. Front-end (UX) development using JavaScript, jQuery, React, AngularJS, HTML5 and CSS3. Mobile (iOS) development with Swift and Objective-C.
 ### kevin-deleon.com
 Freelance Designer/Developer - { June 1999 - Present }  
