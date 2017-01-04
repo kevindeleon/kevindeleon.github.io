@@ -45,7 +45,7 @@ CenturyLink, Zatarain&rsquo;s, Whitney/Hancock Bank, Piccadilly Restaurants, San
 ## EXPERIENCE
 
 ### Intermedia
-Web Developer, Mountain View, CA (Remote) - { February 2016 - Present }
+Web Developer, Mountain View, CA (Remote) - { February 2016 - Present }  
 Review, analyze, develop and modify public facing assets; including coding, testing, debugging and documenting applications and systems. Back-end development using PHP5, CodeIgniter framework, Fuel CMS and Wordpress. Front-end (UX) development using JavaScript, jQuery, React, HTML5 and CSS3. Integration of assets with Salesforce API and Marketo. Implement A/B testing using Google Analytics experiments framework.
 
 ### GigSalad
