@@ -1,3 +1,56 @@
-<!-- Start of HubSpot Embed Code -->
+<!-- Start of HubSpot Tracking Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/899539.js"></script>
-<!-- End of HubSpot Embed Code -->
+<!-- End of HubSpot Tracking Code -->
+
+<!-- Event Tracking -->
+<script type="text/javascript">
+
+// track external links
+$(function() {
+	$('a').click(function(){
+		var url = $(this).attr('href');
+		var txt = $(this).text();
+		if (url.indexOf("kevin-deleon.com") === -1 && url !== "#") {
+			ga('send', 'event', {
+				eventCategory: 'Outbound Link',
+				eventAction:  'click',
+				eventLabel: url + ' - ' + txt,
+				transport: 'beacon'
+			});
+		}
+	});
+});
+
+// track nav links
+var linkClicked = false;
+
+$('ul.navigation li a').click(function(e) {
+	e.preventDefault(); 
+	setTimeout(clickLink, 500);
+	linkClicked = false;
+	var url = $(this).attr('href');
+	var txt = $(this).text();
+
+	trackNav('main-nav-click', url, txt);
+});
+
+function clickLink(url) {
+	if (!linkClicked) {
+		linkClicked = true;
+		document.location = url;
+	}
+}
+
+function trackNav(act, url, txt) {
+	ga('send', 'event', {
+		eventCategory: 'Navigation',
+		eventAction:  act,
+		eventLabel: url + ' - ' + txt,
+		transport: 'beacon',
+		hitCallback: function() {
+			clickLink(url);
+		}
+	});
+}
+
+</script>
