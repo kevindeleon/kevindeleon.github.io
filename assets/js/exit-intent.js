@@ -6,6 +6,7 @@
 	// Any defaults the class may need
 	var defaults = {
 		cookieExp: 30,
+		hasFired: false,
 		onExitIntent: function() {
 			console.log ('No callback function defined');
 		}
@@ -22,16 +23,16 @@
 			KDExitIntent.settings = defaults;
 		}
 
-		if (KDExitIntent.checkCookie()) {
+		if (checkCookie()) {
 			return;
 		}
 
-		KDExitIntent.loadEvents();
+		loadEvents();
 	}
 
 	// Object for handling cookies, taken from QuirksMode
 	// http://www.quirksmode.org/js/cookies.html
-	KDExitIntent.cookieManager = {
+	var cookieManager = {
 		
 		// Create a cookie
 		create: function(name, value, days) {
@@ -66,33 +67,36 @@
 		}
 	};
 
-	KDExitIntent.checkCookie = function() {
+	var checkCookie = function() {
 		// Handle cookie reset
 		if (KDExitIntent.settings.cookieExp <= 0) {
-			KDExitIntent.cookieManager.erase("kdexit_intent_shown");
+			cookieManager.erase("kdexit_intent_shown");
 			return false;
 		}
 		
 		// If cookie is set to true
-		if (KDExitIntent.cookieManager.get("kdexit_intent_shown") == "true") {
+		if (cookieManager.get("kdexit_intent_shown") == "true") {
 			return true;
 		}
 			
 		// Otherwise, create the cookie and return false
-		KDExitIntent.cookieManager.create("kdexit_intent_shown", "true", KDExitIntent.settings.cookieExp);
+		cookieManager.create("kdexit_intent_shown", "true", KDExitIntent.settings.cookieExp);
 		
 		return false;
 	};
 
 	// Load event listeners for the popup
-	KDExitIntent.loadEvents = function() {
+	var loadEvents = function() {
 		// Track mouse movements
 		document.addEventListener("mousemove", function(e) {
 			// Get current scroll position
 			var scroll = window.pageYOffset || document.documentElement.scrollTop;
 			
 			if ((e.pageY - scroll) < 7) {
-				KDExitIntent.settings.onExitIntent();
+				if (!KDExitIntent.settings.hasFired) {
+					KDExitIntent.settings.hasFired = true;
+					KDExitIntent.settings.onExitIntent();
+				};				
 			}
 		});
 	};
