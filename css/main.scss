@@ -110,11 +110,11 @@ nav ul li a.current {
 
 @media screen and (max-width: 500px) {
 	/* #main-nav is the original menu */
-	.js #main-nav {
+	#main-nav {
 		display: none;
 	}
 	
-	.js .slicknav_menu {
+	.slicknav_menu {
 		display: block;
 	}
 }
