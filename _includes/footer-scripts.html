@@ -13,6 +13,9 @@
 					formId: '4dcc6883-acb5-40cc-9787-33a3e3101a48',
 					target: '.exit-raq-wrap',
 					css: '',
+					onFormReady: function() {
+						$('#email-4dcc6883-acb5-40cc-9787-33a3e3101a48').attr("placeholder", "you@example.com");
+					},
 					onFormSubmit: function($form) {
 						ga('set', 'dimension2', (new Date()).getTime().toString());
 						ga('send', 'pageview', '/exit-intent/raq-submitted');
@@ -41,9 +44,6 @@ $(function() {
 		var url = $(this).attr("data-kdtrac-src").replace(/^#/, '');
 		ga('send', 'pageview', url);
 	});
-
-	// Set placeholder for exit intent form
-	$('#email-4dcc6883-acb5-40cc-9787-33a3e3101a48').attr('placeholder', "you@example.com");
 
 	// Initialize Exit Intent Popup
 	KDExitIntent.init({
