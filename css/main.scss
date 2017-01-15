@@ -108,12 +108,7 @@ nav ul li a.current {
 	display: none;
 }
 
-@media screen and (max-width: 500px) {
-	/* #main-nav is the original menu */
-	#main-nav {
-		display: none;
-	}
-	
+@media only screen and (max-width: 767px) {	
 	.slicknav_menu {
 		display: block;
 	}
