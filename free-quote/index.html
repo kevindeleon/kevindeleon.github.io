@@ -11,16 +11,18 @@ description: Get a free quote for your e-commerce/web development or digital mar
 <p>Need a Wordpress or Shopify site and have no idea where to start? Maybe you already have a website or e-commerce site you feel isn&rsquo;t performing as well as it should be. That&rsquo;s what I&rsquo;m here for!</p>
 
 <p>Here&rsquo;s the best part about it: It cost you absolutely nothing to get a quote! So, fill out the form below, and let&rsquo;s get started.</p>
-
-<script>
-$(function() {
-	hbspt.forms.create({ 
-		portalId: '899539',
-		formId: '65c36017-988b-4f17-84ee-07bba1de508f',
-		onFormSubmit: function($form) {
-			ga('set', 'dimension2', (new Date()).getTime().toString());
-			ga('send', 'pageview', '/submitted-raq');
-		}
+<div class="standard-raq-wrap">
+	<script>
+	$(function() {
+		hbspt.forms.create({ 
+			portalId: '899539',
+			formId: '65c36017-988b-4f17-84ee-07bba1de508f',
+			target: '.standard-raq-wrap',
+			onFormSubmit: function($form) {
+				ga('set', 'dimension2', (new Date()).getTime().toString());
+				ga('send', 'pageview', '/submitted-raq');
+			}
+		});
 	});
-});
-</script>
+	</script>
+</div>
