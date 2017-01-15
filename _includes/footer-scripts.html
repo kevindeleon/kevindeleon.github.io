@@ -1,12 +1,62 @@
-<!-- Start of HubSpot Tracking Code -->
+<script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/assets/js/exit-intent.js"></script>
+
+<!-- Exit Intent overlay -->
+<section id="exit-raq" class="row" style="display: none;">
+	<div class="grid_12">
+		<h4>Get A Free Quote</h4>
+		<p>I&rsquo;d love to start a conversation and learn more about your development or digital marketing needs. Here's the best part: It costs you absolutely nothing to get a quote!</p>
+		<script type="text/javascript">
+		$(function() {
+			hbspt.forms.create({ 
+				portalId: '899539',
+				formId: '4dcc6883-acb5-40cc-9787-33a3e3101a48',
+				onFormSubmit: function($form) {
+					ga('set', 'dimension2', (new Date()).getTime().toString());
+					ga('send', 'pageview', '/exit-intent/raq-submitted');
+				}
+			});
+		});
+		</script>
+	</div>
+</section>
+<!-- END Exit Intent overlay  -->
+
+<!-- Start of HubSpot Code -->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/899539.js"></script>
 <!-- End of HubSpot Tracking Code -->
 
 <!-- Event Tracking -->
 <script type="text/javascript">
 
-// track external links
 $(function() {
+	// initialize fancybox
+	$('.fancybox').fancybox();
+
+	// Any fancybox opens
+	$('.fancybox').click(function() {
+		var url = $(this).attr("data-kdtrac-src").replace(/^#/, '');
+		ga('send', 'pageview', url);
+	});
+
+	// Initialize Exit Intent Popup
+	KDExitIntent.init({
+		onExitIntent: function() {
+			$.fancybox.open(
+				{
+					href : '#exit-raq'
+				},
+				{
+					afterShow: function() {
+						ga('send', 'pageview', '/exit-intent-fancybox');
+					}
+				}
+			);
+		}
+	});
+
+	// track external links
 	$('a').click(function(){
 		var url = $(this).attr('href');
 		var txt = $(this).text();
@@ -18,23 +68,6 @@ $(function() {
 				transport: 'beacon'
 			});
 		}
-	});
-
-	$('.leadin-content-body').on('submit', '.leadin-form-wrapper', function(event) {
-		$this = $(this);
-		event.preventDefault();
-		setTimeout(submitForm, 1000);
-		var formSubmitted = false;
-
-		function submitForm() {
-			if (!formSubmitted) {
-				formSubmitted = true;
-				$this.submit();
-	    	}
-	    }
-		ga('send', 'pageview', '/exit-intent/raq-submitted', {
-			hitCallback: submitForm
-		});
 	});
 });
 
