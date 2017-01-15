@@ -68,7 +68,7 @@ $(function() {
 	$('a').click(function(){
 		var url = $(this).attr('href');
 		var txt = $(this).text();
-		if (url.indexOf("kevin-deleon.com") === -1 && url !== "#") {
+		if (KDUtils.isExternal(url) && url !== "#") {
 			ga('send', 'event', {
 				eventCategory: 'Outbound Link',
 				eventAction:  'click',
