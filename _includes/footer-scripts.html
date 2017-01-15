@@ -5,6 +5,22 @@
 <!-- Event Tracking -->
 <script type="text/javascript">
 
+var exitIntentRAQ = $('.leadin-form-wrapper');
+exitIntentRAQ.addEventListener('submit', function(event) {
+	event.preventDefault();
+	setTimeout(submitForm, 1000);
+	var formSubmitted = false;
+	function submitForm() {
+		if (!formSubmitted) {
+			formSubmitted = true;
+			exitIntentRAQ.submit();
+    	}
+    }
+	ga('send', 'pageview', '/exit-intent/raq-submitted', {
+		hitCallback: submitForm
+	});
+});
+
 // track external links
 $(function() {
 	$('a').click(function(){
