@@ -174,8 +174,16 @@ code {
 			font-size: 20px;
 			padding: 5px;
 
-			&.error::placeholder {
-				color: #FFF;
+			&.error {
+				::-webkit-input-placeholder {
+					color: #FFF;
+				}
+				::-moz-placeholder {
+					color: #FFF;
+				}
+				:-ms-input-placeholder {
+					color: #FFF:
+				}
 			}
 		}
 	}
