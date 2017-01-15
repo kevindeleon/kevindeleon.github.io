@@ -1,4 +1,5 @@
 <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/assets/js/slicknav/jquery.slicknav.min.js"></script>
 <script type="text/javascript" src="/assets/js/exit-intent.js"></script>
 
 <!-- Exit Intent overlay -->
@@ -36,6 +37,12 @@
 <script type="text/javascript">
 
 $(function() {
+	// Initialize menu
+	$('#main-nav').slicknav({
+		prependTo: '.nav-wrap',
+		label: '',
+	});
+
 	// initialize fancybox
 	$('.fancybox').fancybox();
 

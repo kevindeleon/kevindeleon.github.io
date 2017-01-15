@@ -104,6 +104,21 @@ nav ul li a.current {
 	border-bottom: 3px solid $default-link-color;
 }
 
+.slicknav_menu {
+	display: none;
+}
+
+@media screen and (max-width: 390px) {
+	/* #main-nav is the original menu */
+	.js #main-nav {
+		display: none;
+	}
+	
+	.js .slicknav_menu {
+		display: block;
+	}
+}
+
 // HOME PAGE
 .contact-list {
 	list-style: none;
