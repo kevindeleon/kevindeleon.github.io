@@ -173,16 +173,16 @@ code {
 			border: 1px solid #CCC;
 			font-size: 20px;
 			padding: 5px;
+		}
 
-			&.error::-webkit-input-placeholder {
-					color: #FFF;
-			}
-			&.error::-moz-placeholder {
-				color: #FFF;
-			}
-			&.error:-ms-input-placeholder {
-				color: #FFF:
-			}
+		input.error::-webkit-input-placeholder {
+			color: #FFF;
+		}
+		input.error::-moz-placeholder {
+			color: #FFF;
+		}
+		input.error:-ms-input-placeholder {
+			color: #FFF:
 		}
 	}
 
