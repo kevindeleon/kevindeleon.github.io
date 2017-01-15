@@ -11,6 +11,14 @@ paginate_path: /blog/page/:num
 twitter_username: kevindeleon
 github_username:  kevindeleon
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
 # Sitemap settings
 sitemap:
     file: "/sitemap.xml"
