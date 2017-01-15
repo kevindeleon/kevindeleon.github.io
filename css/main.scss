@@ -174,16 +174,14 @@ code {
 			font-size: 20px;
 			padding: 5px;
 
-			&.error {
-				::-webkit-input-placeholder {
+			&.error::-webkit-input-placeholder {
 					color: #FFF;
-				}
-				::-moz-placeholder {
-					color: #FFF;
-				}
-				:-ms-input-placeholder {
-					color: #FFF:
-				}
+			}
+			&.error::-moz-placeholder {
+				color: #FFF;
+			}
+			&.error:-ms-input-placeholder {
+				color: #FFF:
 			}
 		}
 	}
