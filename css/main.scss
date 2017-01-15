@@ -107,14 +107,8 @@ nav ul li a.current {
 .slicknav_menu {
 	display: none;
 	background-color: white;
-
-	nav ul {
-		float: none;
-		
-		li {
-			float: none;
-		}
-	}
+	float: right;
+	margin-right: 20px;
 
 	.slicknav_btn {
 		background-color: white;
