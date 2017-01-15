@@ -7,6 +7,7 @@
 	var defaults = {
 		cookieExp: 30,
 		hasFired: false,
+		cookieName: 'kdexit_intent_shown',
 		onExitIntent: function() {
 			console.log ('No callback function defined');
 		}
@@ -23,7 +24,8 @@
 			KDExitIntent.settings = defaults;
 		}
 
-		if (checkCookie()) {
+		// If they've already been here, OR they've seen the overlay, then we won't even load event listeners
+		if (checkCookie() === true || KDExitIntent.settings.hasFired === true) {
 			return;
 		}
 
@@ -68,24 +70,21 @@
 	};
 
 	var checkCookie = function() {
-		// Handle cookie reset
+		// If set to 0 or -1, then we'll never set the cookie (or really, just unset it every visit)
 		if (KDExitIntent.settings.cookieExp <= 0) {
-			cookieManager.erase("kdexit_intent_shown");
+			cookieManager.erase(KDExitIntent.settings.cookieName);
 			return false;
 		}
 		
-		// If cookie is set to true
-		if (cookieManager.get("kdexit_intent_shown") == "true") {
+		// If cookie is true, return true
+		if (cookieManager.get(KDExitIntent.settings.cookieName) === "true") {
 			return true;
 		}
-			
-		// Otherwise, create the cookie and return false
-		cookieManager.create("kdexit_intent_shown", "true", KDExitIntent.settings.cookieExp);
 		
 		return false;
 	};
 
-	// Load event listeners for the popup
+	// Load event listeners for exit intent
 	var loadEvents = function() {
 		// Track mouse movements
 		document.addEventListener("mousemove", function(e) {
@@ -93,9 +92,16 @@
 			var scroll = window.pageYOffset || document.documentElement.scrollTop;
 			
 			if ((e.pageY - scroll) < 7) {
-				if (!KDExitIntent.settings.hasFired) {
+				// If they haven't already seen it on this page
+				if (KDExitIntent.settings.hasFired === false) {
+					// Set this so we don't get multiple fires of our onExitIntent (Flickers, multiple tracks, etc)
 					KDExitIntent.settings.hasFired = true;
+					
+					// Fire onExitIntent function
 					KDExitIntent.settings.onExitIntent();
+
+					// Exit Intent has happened -- set cookie so it doesn't happen again
+					cookieManager.create(KDExitIntent.settings.cookieName, "true", KDExitIntent.settings.cookieExp);
 				};				
 			}
 		});
