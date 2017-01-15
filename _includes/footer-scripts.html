@@ -40,9 +40,15 @@ $(function() {
 	// Initialize menu
 	$('#main-nav').slicknav({
 		label: '',
+		afterOpen: function() {
+			ga('send', 'event', 'Moible Menu', 'open');
+		},
+		afterClose: function() {
+			ga('send', 'event', 'Moible Menu', 'close');
+		}
 	});
 
-	// initialize fancybox
+	// initialize any fancybox links
 	$('.fancybox').fancybox();
 
 	// Any fancybox opens via click -- track it
@@ -88,14 +94,24 @@ $(function() {
 // track nav links
 var linkClicked = false;
 
-$('ul.navigation li a').click(function(e) {
+$('ul#main-nav li a').click(function(e) {
 	e.preventDefault(); 
 	setTimeout(clickLink, 500);
 	linkClicked = false;
 	var url = $(this).attr('href');
 	var txt = $(this).text();
 
-	trackNav('main-nav-click', url, txt);
+	trackNav('main-nav-desktop-click', url, txt);
+});
+
+$('ul.slicknav_nav li a').click(function(e) {
+	e.preventDefault(); 
+	setTimeout(clickLink, 500);
+	linkClicked = false;
+	var url = $(this).attr('href');
+	var txt = $(this).text();
+
+	trackNav('main-nav-mobile-click', url, txt);
 });
 
 function clickLink(url) {
