@@ -2,7 +2,7 @@
 layout: page
 status: publish
 published: true
-title: Blog | Kevin deLeon | Web Design and Development | New Orleans, LA
+title: Blog | Web Development &amp; Digital Marketing | New Orleans, LA
 author:
   display_name: Kevin deLeon
   login: admin

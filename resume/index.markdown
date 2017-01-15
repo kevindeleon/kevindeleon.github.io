@@ -2,8 +2,8 @@
 layout: page
 status: publish
 published: true
-title: Resume | Kevin deLeon | Web Design and Development | New Orleans, LA
-description: Resume of web developer kevin deLeon.
+title: Resume | Web Development &amp; Digital Marketing | New Orleans, LA
+description: Resume of web developer &amp; digital marketing professional, Kevin deLeon.
 author:
   display_name: Kevin deLeon
   login: admin
