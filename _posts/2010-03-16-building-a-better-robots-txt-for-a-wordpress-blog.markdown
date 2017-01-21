@@ -7,12 +7,12 @@ author:
   display_name: Kevin deLeon
   login: admin
   email: kevin.deleon@gmail.com
-  url: http://kevin-deleon.com
+  url: https://kevin-deleon.com
 author_login: admin
 author_email: kevin.deleon@gmail.com
-author_url: http://kevin-deleon.com
+author_url: https://kevin-deleon.com
 wordpress_id: 100
-wordpress_url: http://kevin-deleon.com/?p=100
+wordpress_url: https://kevin-deleon.com/?p=100
 date: '2010-03-16 14:14:45 -0500'
 date_gmt: '2010-03-16 18:14:45 -0500'
 categories:

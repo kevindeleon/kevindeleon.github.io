@@ -4,7 +4,7 @@ email: kevin.deleon@gmail.com
 title: "Kevin deLeon | Web Development &amp; Digital Marketing | New Orleans, LA"
 description: "The website and blog of Kevin deLeon -- web developer and digital marketer, currently residing in the swamp."
 baseurl: ""
-url: "http://kevin-deleon.com"
+url: "https://kevin-deleon.com"
 permalink: /:year/:month/:title
 paginate: 10
 paginate_path: /blog/page/:num

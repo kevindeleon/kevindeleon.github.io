@@ -2,4 +2,4 @@
 
 User-agent: *
 
-Sitemap: http://kevin-deleon.com/sitemap.xml
+Sitemap: https://kevin-deleon.com/sitemap.xml

@@ -6,9 +6,9 @@ title: 'Tutorial: Custom Go Template Snippet for Atom'
 author:
   display_name: Kevin deLeon
   email: kevin.deleon@gmail.com
-  url: http://kevin-deleon.com
+  url: https://kevin-deleon.com
 author_email: kevin.deleon@gmail.com
-author_url: http://kevin-deleon.com
+author_url: https://kevin-deleon.com
 categories:
 - development
 - tutorial
