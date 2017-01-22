@@ -4,6 +4,7 @@ status: publish
 published: true
 title: Privacy Policy | Web Development &amp; Digital Marketing | New Orleans, LA
 description: View the privacy policy for kevin-deleon.com
+mod_date: January 22, 2017
 ---
 
 # PRIVACY STATEMENT
@@ -22,7 +23,7 @@ How do you get my consent?
 
 When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, or signup for marketing emails, we imply that you consent to our collecting it and using it for that specific reason only.
 
-## How do I withdraw my consent?
+### How do I withdraw my consent?
 
 If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#105;&#118;&#97;&#99;&#121;&#64;&#107;&#101;&#118;&#105;&#110;&#45;&#100;&#101;&#108;&#101;&#111;&#110;&#46;&#99;&#111;&#109;'>&#112;&#114;&#105;&#118;&#97;&#99;&#121;&#64;&#107;&#101;&#118;&#105;&#110;&#45;&#100;&#101;&#108;&#101;&#111;&#110;&#46;&#99;&#111;&#109;</a>
  or mailing us at: kevin-deleon.com 831 Louisiana Ave, Bogalusa, LA, 70427, United States
@@ -69,4 +70,4 @@ If our site is acquired or merged with another company, your information may be 
 If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#105;&#118;&#97;&#99;&#121;&#64;&#107;&#101;&#118;&#105;&#110;&#45;&#100;&#101;&#108;&#101;&#111;&#110;&#46;&#99;&#111;&#109;'>&#112;&#114;&#105;&#118;&#97;&#99;&#121;&#64;&#107;&#101;&#118;&#105;&#110;&#45;&#100;&#101;&#108;&#101;&#111;&#110;&#46;&#99;&#111;&#109;</a>
  or by mail at 831 Louisiana Ave, Bogalusa, LA 70427, US.
 
-### Last Updated: {{ page.last_modified_at | date: '%B %d, %Y' }}
+### Last Updated: {{ page.mod_date }}
