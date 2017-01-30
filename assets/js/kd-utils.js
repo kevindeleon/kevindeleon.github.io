@@ -54,7 +54,7 @@ var KDUtils = {
 			expires = ""; 
 		} 
 		domain = ""; 
-		if (window.location.hostname.indexOf('kevi-deleon.com') !== -1) { 
+		if (window.location.hostname.indexOf('kevin-deleon.com') !== -1) { 
 			domain = ";domain=.kevin-deleon.com"; 
 		} 
 		document.cookie = name + "=" + value + expires + "; path=/" + domain; 
